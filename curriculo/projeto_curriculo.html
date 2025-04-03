@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio - Felipe Marland Araujo</title>
+    <link rel="stylesheet" href="projeto_curriculo.css" />
+    <style>
+      .tabs {
+        width: 500px;
+        margin: 20px auto;
+      }
+
+      .tab-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      .tab-item {
+        padding: 10px 20px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+
+      .tab-item.active {
+        background-color: #ddd;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="titulo">
+      <h1>Meu Portfólio - Felipe Marland Araújo - Front-End Developer</h1>
+    </div>
+    <div class="image">
+      <img src="foto.png" alt="Imagem" />
+    </div>
+    <div class="descricao">
+      <hr />
+      <div class="titulos">
+        <h3>Sobre Mim</h3>
+      </div>
+
+      <p>
+        Sou um desenvolvedor em constante evolução, sempre buscando aprender e
+        criar soluções que agreguem valor. Acredito que um bom design e um
+        código bem estruturado podem mudar a forma como interagimos com a
+        tecnologia. Aprendizado contínuo e desafios são o que me movem no mundo
+        do desenvolvimento web.
+      </p>
+    </div>
+    <hr />
+    <div class="titulos">
+      <h3>Seja Bem-Vindo(a)!</h3>
+      <hr />
+      <h3>Página Inicial</h3>
+    </div>
+    <div class="conteudo">
+      <p>
+        Construindo interfaces modernas e experiências digitais que fazem a
+        diferença.
+      </p>
+      <p>Transformando ideias em código e códigos em soluções.</p>
+      <p>
+        Sou Felipe Marland Araújo, desenvolvedor front-end apaixonado por criar
+        interfaces incríveis.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="Project_Tittle">
+      <h3>Meus Projetos</h3>
+    </div>
+
+    <hr />
+    <div class="tabs">
+      <ul class="tab-list">
+        <li class="tab-item active" data-tab="projeto1">
+          <a href="formulario_medico.html"target="_blank"rel="noopener noreferrer">Projeto Formulario Medico</a
+          >
+        </li>
+        <li class="tab-item" data-tab="projeto2">
+          <a href="pokedex.html" target="_blank" rel="noopener noreferrer">
+            Projeto Pokedex</a
+          >
+        </li>
+        <li class="tab-item" data-tab="projeto3">
+          <a href="projeto3.html">Projeto Lista de Tarefas </a>
+        </li>
+        <li class="tab-item" data-tab="projeto4">
+          <a href="projeto4.html">Projeto Site Academia</a>
+        </li>
+        <li class="tab-item" data-tab="projeto5">
+          <a href="projeto5.html">Projeto Nestle</a>
+        </li>
+      </ul>
+
+    </div>
+    <hr />
+    <div class="titulo_contatos">
+      <h3>Contatos</h3>
+    </div>
+    <div class="contatos">
+      <p>Entre em contato para solicitar os serviços!</p>
+      <ul>
+        <li>+55 (11) 9 6650-2001 (CLARO)</li>
+        <li>felipi_araujo@outlook.com</li>
+      </ul>
+    </div>
+    <script>
+      const tabs = document.querySelectorAll(".tab-item");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const tabId = tab.dataset.tab;
+
+          tabs.forEach((t) => t.classList.remove("active"));
+          contents.forEach((c) => c.classList.remove("active"));
+
+          tab.classList.add("active");
+          document.getElementById(tabId).classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

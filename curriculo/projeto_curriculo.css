@@ -1,0 +1,115 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    color: #007bff;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.titulos,
+.conteudo,
+.descricao,
+.Project_Tittle,
+.contatos {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0 20px;
+    font-family: inherit;
+    font-style: normal;
+}
+
+.Projetos ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
+
+.titulo_contatos {
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+/* Estilos para as abas */
+.tabs {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-item:hover {
+    background-color: #d0d0d0;
+}
+
+.tab-item.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+/* Estilos específicos para a área de contatos */
+.contatos ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: center;
+}
